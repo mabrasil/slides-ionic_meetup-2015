@@ -1,0 +1,28 @@
+{
+  "name": "tunando-seu-workflow-ionic",
+  "version": "1.0.0",
+  "description": " Slides from my talk at Ionic Meetup about the improving workflow.",
+  "repository": "https://github.com/mabrasil/slides-ionic_meetup-2015",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "reveal",
+    "ionic",
+    "ionic meetup"
+  ],
+  "author": "Matheus Albuquerque Brasil",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.4.0",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-stylus": "^2.0.1",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4"
+  }
+}
