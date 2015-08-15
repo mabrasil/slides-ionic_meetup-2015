@@ -1,0 +1,118 @@
+section
+
+  section.sec-slide(data-background="#795548")
+    h1.upper.white Scripting
+
+  section.sec-slide
+
+    h2 Nós temos...
+
+    .col-3.fragment
+      img(src="img/logos/typescript.png", alt="Typescript")
+      p Typescript
+    .col-3.fragment
+      img(src="img/logos/livescript.png", alt="Livescript")
+      p Livescript
+    .col-3.fragment
+      img(src="img/logos/purescript.png", alt="Purescript")
+      p Purescript
+
+    h2.fragment ...
+
+  section.sec-slide(data-background="#388E3C")
+    h1.upper.white Typescript
+
+  section.sec-slide.text-left(data-background="#388E3C")
+
+    h2.white Typescript...
+
+    p.white.fragment ✔ EcmaScript6
+    p.white.fragment ✔ Sistema de Tipos
+    p.white.fragment ✔ Fácil conversão da atual codebase
+    p.white.fragment ✔ Angular 2.0 <3
+
+  section.sec-slide.text-left(data-background="#388E3C")
+
+    h2.white Typescript...
+
+    p.white.fragment ✔ Produtividade
+    p.white.fragment ✔ Legibilidade
+    p.white.fragment ✔ Manutenibilidade
+    p.white.fragment ✔ Alinhamento com o Futuro
+    p.white.fragment Status: <b>Implementado</b>
+
+  section.sec-slide(data-background="#388E3C")
+    h1.upper.white Modularização
+
+  section.sec-slide.text-left(data-background="#388E3C")
+
+    h2.white Modularização...
+
+    p.white.fragment ✔ Single Responsability
+    p.white.fragment ✔ Separation of Concerns
+
+  section.sec-slide.text-left(data-background="#388E3C")
+
+    h2.white Antes...
+
+    pre.fragment
+      code.
+        |-- www/
+        |   |-- js/
+        |   |   |-- app.js
+        |   |   |-- controllers.js
+        |   |   |-- directives.js
+        |   |   |-- filters.js
+        |   |   |-- services.js
+
+    p.fragment No app.js
+
+    pre.fragment
+      code.
+        angular.module('confboilerplate', [
+          'ionic',
+          'ngMap',
+          'confboilerplate.controllers',
+          'confboilerplate.services',
+          'confboilerplate.filters',
+          'confboilerplate.directives'
+        ])
+
+  section.sec-slide.text-left(data-background="#388E3C")
+
+    h2.white Agora...
+
+    pre.fragment
+      code.
+        'use strict';
+        angular.module('confboilerplate.schedule', [
+          'confboilerplate.schedule.controllers',
+          'confboilerplate.schedule.services',
+          'confboilerplate.schedule.directives',
+        ]);
+        angular.module('confboilerplate.schedule.controllers', ['underscore','ionic']);
+        angular.module('confboilerplate.schedule.services', ['underscore','ionic']);
+        angular.module('confboilerplate.schedule.directives', ['underscore','ionic']);
+
+    p.fragment No app.js
+
+    pre.fragment
+      code.
+        angular.module('confboilerplate', [
+          'ionic',
+          'confboilerplate.about',
+          'confboilerplate.location',
+          'confboilerplate.partners',
+          'confboilerplate.schedule',
+          ...
+          'confboilerplate.sponsors'
+        ])
+
+  section.sec-slide.text-left(data-background="#388E3C")
+
+    h2.white Modularização...
+
+    p.white.fragment ✔ Testabilidade
+    p.white.fragment ✔ Legibilidade
+    p.white.fragment ✔ Manutenibilidade
+    p.white.fragment Status: <b>Implementado</b>
