@@ -1,0 +1,25 @@
+{
+  "about": {
+    "title": "Um projeto mobile open source em duas semanas",
+    "description": "Slides from my talk at Ionic Meetup about the improving your Ionic workflow. ",
+    "author": "@mabrasil_io",
+    "site": {
+        "url": "https://github.com/mabrasil/slides-ionic_meetup-2015",
+        "googleAnalytics": "",
+        "cover": "images/meta/screenshot.png",
+        "favicon": "images/meta/favicon.png"
+    }
+  },
+  "deploy":{
+    "rsync":{
+      "username":"",
+      "hostname": "",
+      "dest": ""
+    },
+    "github":{
+      "remoteUrl": "",
+      "branch": "",
+      "message": "Deployed to Github Pages at [timestamp]"
+    }
+  }
+}
