@@ -4,7 +4,7 @@
     "description": "Slides from my talk at Ionic Meetup about the improving your Ionic workflow. ",
     "author": "@mabrasil_io",
     "site": {
-        "url": "https://github.com/mabrasil/slides-ionic_meetup-2015",
+        "url": "http://mabrasil.github.io/talks/2015/ionic-meetup/",
         "googleAnalytics": "",
         "cover": "images/meta/screenshot.png",
         "favicon": "images/meta/favicon.png"
